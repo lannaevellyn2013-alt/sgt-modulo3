@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sistema Gerenciador de Tarefas">
+    <title>Detalhes da Tarefa | Sistema Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <input type="checkbox" id="tema" class="controle-tema">
+    <label for="tema" class="botao-tema" aria-label="Alternar tema" title="Alternar tema">
+        <span class="icone-claro" aria-hidden="true">☀️</span>
+        <span class="icone-escuro" aria-hidden="true">🌙</span>
+    </label>
+
+    <div class="pagina pagina-interna">
+        <div class="layout-interno">
+            <aside class="sidebar">
+                <h2>Sistema de Gerenciamento de Tarefas</h2>
+                <nav class="navegacao" aria-label="Navegação principal">
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="dashboard.html">Minhas Tarefas</a></li>
+                        <li><a href="criar-tarefa.html">Criar Tarefa</a></li>
+                        <li><a href="#">Configurações</a></li>
+                        <li><a href="../index.html">Sair</a></li>
+                    </ul>
+                </nav>
+                <p class="sidebar-rodape">© 2026 Projeto Acadêmico</p>
+            </aside>
+            <main class="conteudo-interno">
+                <header class="cabecalho-interno">
+                    <h1>Detalhes da Tarefa</h1>
+                    <a class="botao botao-secundario" href="dashboard.html">Voltar para a Lista</a>
+                </header>
+
+                <article class="cartao cartao-detalhes">
+                    <h2>Revisar proposta do cliente</h2>
+
+                    <dl class="lista-detalhes">
+                        <dt>Status:</dt>
+                        <dd><span class="status">Pendente</span></dd>
+
+                        <dt>Criada em:</dt>
+                        <dd>13 de Setembro de 2026</dd>
+                    </dl>
+
+                    <section class="descricao-detalhada" aria-labelledby="titulo-descricao">
+                        <h2 id="titulo-descricao">Descrição</h2>
+                        <p>Revisar a proposta enviada pelo cliente e verificar todas as informações antes de encaminhar
+                            a versão final.</p>
+                    </section>
+
+                    <div class="acoes-formulario">
+                        <a class="botao botao-primario" href="editar-tarefa.html">Editar Tarefa</a>
+                        <a class="botao botao-perigo" href="#">Excluir Tarefa</a>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
